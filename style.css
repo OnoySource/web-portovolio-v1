@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        background-color: #3b82f6;
+        color: #e0f2fe;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .container {
+        padding: clamp(1rem, 5vw, 5rem);
+        padding-bottom: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    section {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .section-text, .section-text h1 {
+        max-width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        color: #93c5fd;
+    }
+
+    .section-text h2 {
+        color: #ffc107;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .section-text p {
+        width: 100%;
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin-top: 1.2rem;
+        text-align: justify;
+    }
+
+    .contact {
+        margin-top: 2rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    .contact button {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        width: 80%;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        background-color: #1e3a8a;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-sosmed img {
+        opacity: 0.6;
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s ease;
+        object-fit: contain;
+    }
+
+    .icon-sosmed img:hover {
+        transform: scale(1.2);
+    }
+
+    .image {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 90%;
+        filter: brightness(1);
+        margin-top: -100px;
+    }
+
+    .about-me, .projects {
+        background-color: #e0f2fe;
+        color: #0f172a;
+        text-align: center;
+    }
+
+    .about-me p {
+        padding-top: 20px;
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    .about-me > .container {
+        margin: 0 auto;
+        background-color: #93c5fd;
+        border-radius: 7px;
+        padding-bottom: 80px;
+    }
+
+    .about-me h1, .projects h1 {
+        font-size: 2rem;
+    }
+
+    .projects, .container {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .card img:hover {
+        border-radius: 7px;
+        transform: scale(1.05);
+    }
+
+    .desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .desc h3 {
+        font-size: 1.2rem;
+        color: #343a40;
+        padding: 15px 0;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+        color: #343a40;
+        text-align: justify;
+    }
+
+    .desc a {
+        font-size: 0.95rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    body {
+        background-color: #3b82f6;
+        color: #e0f2fe;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .container {
+        padding: clamp(1rem, 5vw, 5rem);
+        padding-bottom: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 140px;
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .nav-links a:hover {
+        color: #ffc107;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .section-text, .section-text h1 {
+        max-width: 60%;
+        font-size: 3rem;
+        color: #93c5fd;
+    }
+
+    .section-text h2 {
+        font-size: 2rem;
+        color: #ffc107;
+        font-weight: bold;
+    }
+
+    .section-text p {
+        width: 90%;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 1.2rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .contact {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .contact button {
+        padding: 10px 40px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        background-color: #1e3a8a;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .contact button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-sosmed {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        width: 34%;
+    }
+
+    .icon-sosmed a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .icon-sosmed img {
+        opacity: 0.6;
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s ease;
+        object-fit: contain;
+    }
+
+    .icon-sosmed img:hover {
+        transform: scale(1.2);
+    }
+
+    .image img {
+        width: 97%;
+        filter: brightness(1);
+    }
+
+    .about-me, .projects {
+        background-color: #e0f2fe;
+        color: #0f172a;
+    }
+
+    .about-me > .container {
+        margin: 0 auto;
+        background-color: #93c5fd;
+        border-radius: 7px;
+        padding-bottom: 80px;
+    }
+
+    .about-me h1, .projects h1 {
+        font-size: 2.5rem;
+        color: #2563eb;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #e0f2fe;
+        line-height: 1.7;
+        max-width: 800px;
+        text-align: justify;
+    }
+
+    .projects, .container {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .projects, .list-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 6rem;
+    }
+
+    .card {
+        width: 30%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .card img:hover {
+        border-radius: 7px;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desc h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .desc a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .card p {
+        font-size: 12px;
+        text-align: justify;
+        margin-top: 8px;
+        color: #343a40;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
