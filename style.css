@@ -38,14 +38,11 @@
         top: 15px;
         right: 20px;
         z-index: 1000;
-        transition: all 0.3s ease;
-
     }
     
     .nav-links {
         display: none;
         flex-direction: column;
-        bakground-color: #1e40af;
         background-color: #93c5fd;
         position: absolute;
         top: 60px;
@@ -58,7 +55,6 @@
     
     .nav-links.active {
         display: flex;
-        transition: all 0.3s ease;
     }
     
     .nav-links a {
@@ -67,6 +63,7 @@
         font-size: 1.1rem;
         text-align: center;
         padding: 10px 0;
+        font-weight: bold;
     }
     
 
